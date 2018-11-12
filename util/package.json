@@ -1,0 +1,15 @@
+{
+  "name": "json-convert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "json-to-crystal.js",
+  "dependencies": {
+    "json-to-crystal": "^0.5.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "convert": "node json-to-crystal.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
