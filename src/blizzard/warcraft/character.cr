@@ -13,7 +13,7 @@ module Blizzard
         level: Int32,
         achievement_points: { key: "achievementPoints", type: Int32 },
         thumbnail: String,
-        spec: Spec,
+        spec: Spec?,
         guild: String,
         guild_realm: { key: "guildRealm", type: String },
         last_modified: { key: "lastModified", type: Int32 }
