@@ -4,7 +4,7 @@ require "./character"
 require "./log"
 
 module Blizzard
-	module Warcraft
+	module WoW
 		class Guild
       JSON.mapping({
         last_modified: { key: "lastModified", type: Int64 },

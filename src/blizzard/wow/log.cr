@@ -1,6 +1,6 @@
 require "json"
 module Blizzard
-	module Warcraft
+	module WoW
     class Log
       JSON.mapping({
         type: String,

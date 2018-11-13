@@ -1,15 +1,15 @@
-require "../warcraft/**"
+require "../wow/**"
 
 module Blizzard
   class Client
     # define method related to World of Warcraft Community API
     #
     # see : https://develop.battle.net/documentation/api-reference/world-of-warcraft-community-api
-    module Warcraft
+    module WoW
       def wow_guild(realm : String, guild_name : String, fields : Array(String) = [] of String, locale : String? = nil)
         params = build_wow_param(locale, fields)
         body = get("/wow/guild/#{realm}/#{guild_name}", params)
-        Blizzard::Warcraft::Guild.from_json(body)
+        Blizzard::WoW::Guild.from_json(body)
       end
 
 

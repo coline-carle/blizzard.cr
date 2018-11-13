@@ -1,7 +1,7 @@
 require "json"
 
 module Blizzard
-  module Warcraft
+  module WoW
     class Character
       JSON.mapping({
         name: String,

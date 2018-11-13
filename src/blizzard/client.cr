@@ -67,6 +67,6 @@ module Blizzard
       end
     end
 
-    include Warcraft
+    include WoW
   end
 end

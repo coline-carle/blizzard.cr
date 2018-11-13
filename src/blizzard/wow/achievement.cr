@@ -1,7 +1,7 @@
 require "json"
 
 module Blizzard
-	module Warcraft
+	module WoW
     class Achievement
       JSON.mapping({
         achievements_completed: { key: "achievementsCompleted", type: Array(Int32) },
