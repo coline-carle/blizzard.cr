@@ -19,8 +19,6 @@ def main
   realm = ARGV[1]
   guild = ARGV[2]
 
-
-
   oauth = Blizzard::OAuth2.new("us", ENV["BLIZZARD_CLIENT_ID"], ENV["BLIZZARD_CLIENT_SECRET"])
   token = oauth.get_access_token_using_client_credentials
   client = Blizzard::Client.new(region.downcase, token)
